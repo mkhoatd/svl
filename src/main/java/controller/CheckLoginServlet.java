@@ -23,10 +23,11 @@ public class CheckLoginServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("login", "1");
             session.setMaxInactiveInterval(-1);
+            url = "/svList.jsp";
         }
         else {
             request.setAttribute("needRegist", "1");
         }
-        getServletContext().getRequestDispatcher(url).forward(request, response);
+        response.sendRedirect(url);
     }
 }
