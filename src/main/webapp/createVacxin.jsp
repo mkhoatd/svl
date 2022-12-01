@@ -17,7 +17,7 @@
 </head>
 <body>
 <h2 class="text-center">Tạo mới một loại Vacxin</h2>
-<form class="align-items-center justify-content-center">
+<form class="align-items-center justify-content-center" action="createVacxin.jsp" method="post">
   <div class="form-row " >
     <label for="MaVacxin">Mã Vacxin</label>
     <input type="text" class="form-control" id="MaVacxin" placeholder="Mã Vacxin">

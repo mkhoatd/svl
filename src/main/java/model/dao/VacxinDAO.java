@@ -5,6 +5,7 @@ import model.bean.Vacxin;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class VacxinDAO {
     public static void AddVacxin(Vacxin vacxin) {
@@ -43,33 +44,37 @@ public class VacxinDAO {
             e.printStackTrace();
         }
     }
-    public static Vacxin GetVacxinByMaVacxin(String MaVacxin) {
-        String sql = "SELECT * FROM Vacxin WHERE MaVacxin=?";
+    public static ArrayList<Vacxin> GetVacxinByMaVacxin(String MaVacxin) {
+        String sql = "SELECT * FROM Vacxin WHERE MaVacxin like ?";
         return getVacxin(MaVacxin, sql);
     }
-    public static Vacxin GetVacxinByTenVacxin(String TenVacxin) {
-        String sql = "SELECT * FROM Vacxin WHERE TenVacxin=?";
+    public static ArrayList<Vacxin> GetVacxinByTenVacxin(String TenVacxin) {
+        String sql = "SELECT * FROM Vacxin WHERE TenVacxin like ?";
         return getVacxin(TenVacxin, sql);
     }
 
-    private static Vacxin getVacxin(String value, String sql) {
-        Vacxin vacxin = new Vacxin();
+    private static ArrayList<Vacxin> getVacxin(String value, String sql) {
+        ArrayList<Vacxin> vacxins = new ArrayList<>();
         try {
             Connection connection = DBHelper.GetConnection();
             PreparedStatement stm =connection.prepareStatement(sql);
-            stm.setString(1, value);
+            stm.setString(1,"%" + value + "%");
             ResultSet rs = stm.executeQuery();
-            rs.next();
-            vacxin.setMaVacxin(rs.getString("MaVacxin"));
-            vacxin.setTenVacxin(rs.getString("TenVacxin"));
-            vacxin.setSoMui(rs.getInt("SoMui"));
-            vacxin.setMoTa(rs.getString("MoTa"));
-            vacxin.setGiaVacxin(rs.getString("GiaVacxin"));
-            vacxin.setTenHangSX(rs.getString("TenHangSX"));
+            while (rs.next()) {
+                Vacxin vacxin = new Vacxin();
+                vacxin.setMaVacxin(rs.getString("MaVacxin"));
+                vacxin.setTenVacxin(rs.getString("TenVacxin"));
+                vacxin.setSoMui(rs.getInt("SoMui"));
+                vacxin.setMoTa(rs.getString("MoTa"));
+                vacxin.setGiaVacxin(rs.getString("GiaVacxin"));
+                vacxin.setTenHangSX(rs.getString("TenHangSX"));
+                vacxins.add(vacxin);
+            }
+
             rs.close();
             stm.close();
             connection.close();
-            return vacxin;
+            return vacxins;
         } catch (Exception e) {
             e.printStackTrace();
         }

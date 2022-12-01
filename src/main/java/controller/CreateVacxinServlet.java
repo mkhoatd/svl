@@ -4,6 +4,7 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 import model.bean.Vacxin;
+import model.bo.VacxinBO;
 
 import java.io.IOException;
 
@@ -23,6 +24,6 @@ public class CreateVacxinServlet extends HttpServlet {
         vacxin.setMoTa(request.getParameter("MoTa"));
         vacxin.setGiaVacxin(request.getParameter("GiaVacxin"));
         vacxin.setTenHangSX(request.getParameter("TenHangSX"));
-        request.setAttribute("vacxin", vacxin);
+        VacxinBO.AddVacxin(vacxin);
     }
 }
