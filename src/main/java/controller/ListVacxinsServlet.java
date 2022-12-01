@@ -15,7 +15,7 @@ public class ListVacxinsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String MaVacxin = request.getParameter("MaVacxin");
         String TenVacxin = request.getParameter("TenVacxin");
-        ArrayList<Vacxin> vacxins = new ArrayList<>();
+        ArrayList<Vacxin> vacxins = VacxinBO.GetAllVacxin();
         if (MaVacxin != null && MaVacxin !="") {
             vacxins= VacxinBO.GetVacxinByMaVacxin(MaVacxin);
         }
@@ -23,7 +23,7 @@ public class ListVacxinsServlet extends HttpServlet {
             vacxins= VacxinBO.GetVacxinByTenVacxin(TenVacxin);
         }
         request.setAttribute("vacxins", vacxins);
-        request.getRequestDispatcher("ListVacxins.jsp").forward(request, response);
+        request.getRequestDispatcher("vacxins.jsp").forward(request, response);
     }
 
     @Override

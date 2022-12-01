@@ -10,13 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f3a74a3-0179-4b9c-a2f9-7f97c25a2782" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ListVacxinsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/vacxins.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CreateVacxinServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CreateVacxinServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ListVacxinsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ListVacxinsServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/bo/VacxinBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/bo/VacxinBO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/VacxinDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/VacxinDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createVacxin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createVacxin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vacxins.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vacxins.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +176,7 @@
       <workItem from="1669859358347" duration="847000" />
       <workItem from="1669860222729" duration="262000" />
       <workItem from="1669860501706" duration="5436000" />
-      <workItem from="1669867138066" duration="14416000" />
+      <workItem from="1669867138066" duration="14906000" />
     </task>
     <servers />
   </component>

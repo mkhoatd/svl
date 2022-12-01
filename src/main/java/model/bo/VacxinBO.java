@@ -18,4 +18,7 @@ public class VacxinBO {
     public static ArrayList<Vacxin> GetVacxinByTenVacxin(String TenVacxin) {
         return VacxinDAO.GetVacxinByTenVacxin(TenVacxin);
     }
+    public static ArrayList<Vacxin> GetAllVacxin() {
+        return VacxinDAO.GetAllVacxin();
+    }
 }

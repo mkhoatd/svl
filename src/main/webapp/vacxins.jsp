@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: mkhoatd
@@ -20,9 +21,9 @@
     <form action="ListVacxinsServlet" method="get" >
       <p>
         <label for="TenVacxin">Tìm tên Vacxin</label>
-        <input type="text" class="form-control" id="TenVacxin" placeholder="Tên Vacxin">
+        <input type="text" class="form-control" id="TenVacxin" name="TenVacxin" placeholder="Tên Vacxin">
         <label for="MaVacxin">Tìm mã Vacxin</label>
-        <input type="text" class="form-control" id="MaVacxin" placeholder="Tên Vacxin">
+        <input type="text" class="form-control" id="MaVacxin" name="MaVacxin" placeholder="Mã Vacxin">
         <button type="submit" class="btn btn-primary">Submit</button>
         <a class="btn btn-primary" href="CreateVacxinServlet">Thêm mới</a>
       </p>
@@ -30,20 +31,23 @@
     <table class="table">
       <thead>
       <tr>
-        <th scope="col">MSSV</th>
-        <th scope="col">Họ tên</th>
-        <th scope="col">Giới tính</th>
-        <th scope="col">Khoa</th>
-        <th scope="col"></th>
+        <th scope="col">Mã Vacxin</th>
+        <th scope="col">Tên Vacxin</th>
+        <th scope="col">Số mũi</th>
+        <th scope="col">Mô tả</th>
+        <th scope="col">Giá Vacxin</th>
+        <th scope="col">Tên hãng SX</th>
       </tr>
       </thead>
       <tbody>
-      <c:forEach items="${students}" var="student">
+      <c:forEach items="${vacxins}" var="vacxin">
         <tr>
-          <td scope="row">${student.getId()}</td>
-          <td>${student.getName()}</td>
-          <td>${student.getGenderString()}</td>
-          <td>${student.getKhoaName()}</td>
+          <td scope="row">${vacxin.getMaVacxin()}</td>
+          <td>${vacxin.getTenVacxin()}</td>
+          <td>${vacxin.getSoMui()}</td>
+          <td>${vacxin.getMoTa()}</td>
+          <td>${vacxin.getGiaVacxin()}</td>
+          <td>${vacxin.getTenHangSX()}</td>
           <td>
             <a type="button" class="btn btn-secondary" href="">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

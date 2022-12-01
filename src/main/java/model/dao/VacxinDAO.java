@@ -52,6 +52,10 @@ public class VacxinDAO {
         String sql = "SELECT * FROM Vacxin WHERE TenVacxin like ?";
         return getVacxin(TenVacxin, sql);
     }
+    public static ArrayList<Vacxin> GetAllVacxin() {
+        String sql = "SELECT * FROM Vacxin where TenVacxin like ?";
+        return getVacxin("", sql);
+    }
 
     private static ArrayList<Vacxin> getVacxin(String value, String sql) {
         ArrayList<Vacxin> vacxins = new ArrayList<>();
