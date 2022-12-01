@@ -14,10 +14,10 @@
         <a href="/createVacxin.jsp" class="list-group-item list-group-item-action active">
             Tạo mới một loại Vacxin
         </a>
-        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-        <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-        <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-        <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+        <a href="#" class="list-group-item list-group-item-action">Sửa thông tin một loại vacxin</a>
+        <a href="#" class="list-group-item list-group-item-action">Tìm kiếm thông tin các loại vacxin</a>
+        <a href="#" class="list-group-item list-group-item-action">Liệt kê lịch sử tiêm phòng của khác hàng</a>
+        <a href="#" class="list-group-item list-group-item-action disabled">Thống kê tổng số tiền đã trả</a>
     </div>
 </body>
 </html>
