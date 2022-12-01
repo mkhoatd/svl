@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f3a74a3-0179-4b9c-a2f9-7f97c25a2782" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/controller/GetAllStudentsServlet.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/model/bean/Benh.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/model/bean/KhachHang.java" afterDir="false" />
@@ -19,6 +20,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/model/bean/Vacxin.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/model/bo/KhoaBO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/KhoaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/VacxinDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/addSv.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/svl_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/svl_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/svl_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/svl_war_exploded.xml" afterDir="false" />
@@ -26,6 +28,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/CheckLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CheckLoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SinhVienServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AddStudentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/bo/StudentBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/bo/StudentBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/DBHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/StudentDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/svList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/svList.jsp" afterDir="false" />
     </list>
@@ -188,7 +191,7 @@
       <workItem from="1669859358347" duration="847000" />
       <workItem from="1669860222729" duration="262000" />
       <workItem from="1669860501706" duration="5436000" />
-      <workItem from="1669867138066" duration="11360000" />
+      <workItem from="1669867138066" duration="11827000" />
     </task>
     <servers />
   </component>
