@@ -23,7 +23,7 @@ public class CheckLoginServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("login", "1");
             session.setMaxInactiveInterval(-1);
-            url = "/svList.jsp";
+            url = "/GetAllStudentsServlet";
         }
         else {
             request.setAttribute("needRegist", "1");

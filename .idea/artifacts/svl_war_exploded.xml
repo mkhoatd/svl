@@ -19,6 +19,8 @@
           <element id="file-copy" path="$USER_HOME$/apache-tomcat-10.0.27/lib/servlet-api.jar" />
           <element id="library" level="project" name="javax.servlet.jstl" />
           <element id="library" level="project" name="jstl" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/jakarta.servlet.jsp.jstl-2.0.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/jakarta.servlet.jsp.jstl-api-2.0.0.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">

@@ -8,7 +8,7 @@ public class DBHelper {
     public static Connection GetConnection(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            String dbUrl = "jdbc:mysql://localhost:3306/test888";
+            String dbUrl = "jdbc:mysql://localhost:3306/test999";
             String username = "root";
             String password = "password";
             Connection connection = DriverManager.getConnection(dbUrl, username, password);
