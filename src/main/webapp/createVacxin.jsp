@@ -43,7 +43,7 @@
     <input type="text" class="form-control" id="TenHangSX" placeholder="Tên hãng SX">
   </div>
   <div class="form-row " >
-    <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
   </div>
 </form>
 </body>
